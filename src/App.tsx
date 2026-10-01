@@ -49,7 +49,7 @@ function App() {
   const pieces = [
     {
       name: 'Buttons',
-      story: 'buttons',
+      story: 'button--primary',
       category: 'Controls',
       description: 'Clear actions, made tactile.',
       preview: (
@@ -66,7 +66,7 @@ function App() {
     },
     {
       name: 'Avatars',
-      story: 'avatars',
+      story: 'avatar-group--default',
       category: 'People',
       description: 'A little face goes a long way.',
       preview: (
@@ -78,7 +78,7 @@ function App() {
     },
     {
       name: 'Badges',
-      story: 'badges',
+      story: 'badge--in-progress',
       category: 'Signals',
       description: 'Small signals with a point of view.',
       preview: (
@@ -91,14 +91,14 @@ function App() {
     },
     {
       name: 'Search field',
-      story: 'search',
+      story: 'search-input--default',
       category: 'Controls',
       description: 'Find the right thing, faster.',
       preview: <SearchInput placeholder="Try ‘buttons’" />,
     },
     {
       name: 'Segmented control',
-      story: 'segmented',
+      story: 'segmented-control--default',
       category: 'Controls',
       description: 'Switch context without losing it.',
       preview: (
@@ -111,7 +111,7 @@ function App() {
     },
     {
       name: 'Toggle',
-      story: 'toggle-switch',
+      story: 'toggle--enabled',
       category: 'Controls',
       description: 'An honest on or off.',
       preview: (
@@ -120,7 +120,7 @@ function App() {
     },
     {
       name: 'Progress ring',
-      story: 'progress',
+      story: 'progress-ring--default',
       category: 'Signals',
       description: 'Momentum at a glance.',
       preview: (
@@ -135,14 +135,14 @@ function App() {
     },
     {
       name: 'Stat card',
-      story: 'statistics',
+      story: 'stat-card--default',
       category: 'Data',
       description: 'Numbers with a little context.',
       preview: <StatCard label="Active projects" value="24" change="12%" trend="up" />,
     },
     {
       name: 'Project card',
-      story: 'project',
+      story: 'project-card--default',
       category: 'Content',
       description: 'A whole world in one glance.',
       preview: (
@@ -157,7 +157,7 @@ function App() {
     },
     {
       name: 'Toast',
-      story: 'toast-notification',
+      story: 'toast--success',
       category: 'Feedback',
       description: 'A useful nudge, never a shout.',
       preview: toastVisible ? (
@@ -351,7 +351,7 @@ function App() {
                 <span className="specimen-category">{piece.category}</span>
                 <a
                   className="specimen-open"
-                  href={`${storybookUrl}/?path=/story/fieldwork-ui-components--${piece.story}`}
+                  href={`${storybookUrl}/?path=/story/fieldwork-ui-components-${piece.story}`}
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`View ${piece.name} story`}
